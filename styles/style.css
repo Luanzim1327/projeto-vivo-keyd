@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --header-social: #3A0C66;
+    --header-nav: #5C2A82;
+    --yellow-keyd: #FFC311;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x:hidden;
+}
+
+.header-social-networks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+
+    background-color: var(--header-social);
+}
+
+.header-social-networks p {
+    color: white;
+}
+
+.social-media i{
+    background-color: white;
+    color: var(--header-social);
+    padding: 0.3rem;
+    border-radius: 50%;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0 0.2rem;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: url("../img/keyd-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height:600px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 1;
+
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 2rem;
+    height: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    transition: 0.1s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--yellow-keyd);
+}
+
+.register-container {
+    color: var(--yellow-keyd);
+    margin-right: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.logo {
+    max-width: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.filter-black {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.877);
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    width: 500px;
+    z-index: 1;
+    padding: 2rem;
+}
+
+.img-teams {
+    z-index: 1;
+    padding: 2rem;
+
+}
+
+.team {
+    max-width: 400px;
+}
+
+.section-content span {
+    color: white;
+    font-weight: 500;
+}
+
+.section-content h1 {
+    margin-bottom: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.section-content p {
+    color: white;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.section-content button {
+    max-width: 200px;
+    min-height: 40px;
+    font-size: .9rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    color: black;
+    background-color: var(--yellow-keyd);
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.section-content button:hover {
+    font-size: .8rem;
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.3);
+}
+
+.space-crowd {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem 0;
+}
+
+.crowd {
+    background-color: var(--yellow-keyd);
+    max-width: 400px;
+    padding: 1rem 0.5rem;
+    padding: 2rem;
+    font-weight: 500;
+}
+
+
+.crowd h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.crowd p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.crowd button {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    letter-spacing: 2px;
+}
+
+.online {
+    position: relative;
+    background: url("../img/crowd-online.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+.live {
+    background: url("../img/crowd-live.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+
