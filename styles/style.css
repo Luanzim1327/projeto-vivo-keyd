@@ -1,160 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap");
 
 :root {
-    --header-social: #3A0C66;
-    --header-nav: #5C2A82;
-    --yellow-keyd: #FFC311;
+  --header-social: #3a0c66;
+  --header-nav: #5c2a82;
+  --yellow-keyd: #ffc311;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins" , sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100vw;
+  background-color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+  color: #121213;
+}
+
+header .header--welcome {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: #3a0c66;
+  color: white;
+}
+
+header .header--socials i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+header .header--socials i:hover {
+  color: var(--yellow-keyd);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+}
+
+nav img {
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5c2a82;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: var(--yellow-keyd);
+    transition: 0.5s;
+}
+
+section.banner {
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) , url("../img/keyd-banner.jpg");
+    background-size: cover;
+    background-position: center;
     height: 100vh;
 }
 
-header {
-    position: relative;
-
-    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) , url("../img/keyd-banner.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    min-height:600px;
-}
-
-.first-head {
+section.banner .banner--content {
     display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-    background-color: #3A0C66;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: white;
 }
 
-.icons i {
-    margin-left: 10px;
-    cursor: pointer;
+section.banner .banner--content h1 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+section.banner .banner--content p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
 
-.logo {
-    max-width: 60px;
-    margin-left: 30px;
-}
-
-header nav ul {
-    display: flex;
-    padding: 30px 0; 
-    list-style: none;
-}
-
-header nav ul li {
-    margin-left: 30px;
-    position: relative;
-}
-
-header nav ul li::after {
-    content: "";
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    height: 3px;
-    width: 0;
-    background-color: #FFC311;
-    transition: 0.3s;
-}
-
-header nav ul li:hover::after {
-    width: 100%;
-}
-
-header nav ul li a {
+section.banner .banner--content a {
     text-decoration: none;
-    font-weight: bold;
-
-}
-
-.link-account {
-    margin-right:30px;
-}
-
-.link-account a {
-    color: #FFC311;
-    font-weight: bold;
-}
-
-.section-header {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    display: flex;
-    min-width: 800px;
-
-    margin-top: 50px;
-    color: white;   
-}
-
-.content-header {
-    display: flex;
-    flex-direction: column;
-}
-
-.content-header span {
-    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
     font-weight: 500;
-}
-
-.content-header h1 {
-    margin-bottom: 20px;
-    font-size: 3rem;
-}
-
-.content-header p {
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-.content-header button {
-    max-width: 200px;
-    min-height: 50px;
-    padding: 10px 0;
-    font-size: 1rem;
-    background-color: #FFC311;
-    color: black;
-    border: none;
+    padding: 10px 20px;
+    border: 1px solid white;
     border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
-
-.content-header button:hover {
-    font-size: .8rem;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
-}
-
-.banner-header img{
-    max-width: 400px;
-}
-
-/* fan tab */
-
-.fan-tab {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+section.banner .banner--logo img{
+    width: 400px;
+    height: auto;
 }
